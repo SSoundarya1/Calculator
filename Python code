@@ -1,0 +1,29 @@
+def add(x, y): 
+  return x + y
+def subtract(x, y): 
+  return x - y
+def multiply(x, y): 
+  return x * y
+def divide(x, y):  
+     if y != 0:
+        return x / y  
+    else :
+         return "Cannot divide by zero"
+
+print("Simple Calculator ")
+x = float(input("Enter first number: "))
+y = float(input("Enter second number: "))
+op = input("Choose operation (+, -, *, /): ")
+
+if op == '+':
+    result = add(x, y)
+elif op == '-':
+    result = subtract(x, y)
+elif op == '*':
+    result = multiply(x, y)
+elif op == '/':
+    result = divide(x, y)
+else:
+    result = "Invalid operator"
+
+print("Result:", result)
